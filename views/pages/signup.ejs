@@ -1,0 +1,104 @@
+<%- include('../partials/header'); %>
+<div class="register-box d-flex justify-content-center">
+  
+  <form>
+    <h1>Registro</h1>
+    <div class="form-row p-2">
+      <input class="form-control" type="text" placeholder="Nombre Entidad" required>
+    </div>
+
+    <div class="form-row p-2">
+      <input class="form-control" placeholder="NIT" name="" value="" required>
+    </div>
+
+    <div class="form-row p-2">
+      <input class="form-control" type="text" placeholder="Telefono" name="" value="" required>
+    </div>
+
+    <div class="form-row p-2">
+      <input class="form-control" type="text" placeholder="Dirección" name="" value="" required>
+    </div>
+
+    <div class="form-row p-2">
+      <input class="form-control" type="text" placeholder="Correo" name="" value="" required>
+    </div>
+
+    <div class="form-row p-2">
+      <button type="submit" class="btn btn-primary mb-2">Registrarse</button>
+    </div>
+  </form>
+</div>
+
+
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">¡Bienvenido/a a nuestra aplicación!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Nos complace ofrecerte nuestros servicios y esperamos que tengas una excelente experiencia al utilizar
+            nuestra plataforma. Para poder acceder a todas las funciones y disfrutar de todo lo que tenemos para
+            ofrecer, te invitamos a que te registres y formes parte de nuestra comunidad.
+
+            Registrarse es muy sencillo y solo te tomará unos minutos. Solo necesitas completar algunos datos personales
+            y crear una contraseña segura para tu cuenta. Una vez que hayas completado el proceso de registro, podrás
+            acceder a todas las funciones de nuestra aplicación y comenzar a disfrutar de todo lo que tenemos para
+            ofrecerte.
+
+            Recuerda que con nuestra aplicación podrás informar cuales son tus puntos de recolección en línea y reservar
+            citas para la recolecciín, todo está a tu alcance con solo un par de clics. Además, contamos con una
+            interfaz fácil de usar y una atención al cliente excepcional para brindarte la mejor experiencia posible.
+
+            No esperes más, ¡regístrate ahora y comienza a disfrutar de todo lo que tenemos para ofrecerte!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="foota" class="hidden footer fixed-bottom  active">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center d-flex justify-content-center flex-column">
+          <img src="/img/ecoreciclapp-no-bg.png" width="150" height="150" alt="Logo de tu empresa"
+            class="footer-logo mx-auto">
+          <p>Información para tu recolección al instante</p>
+        </div>
+        <div class="col-md-4 text-center d-flex justify-content-center flex-column">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="http://localhost:3000/">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center d-flex justify-content-center flex-column">
+          <h5>Síguenos</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="www.facebook.com"><img width="50px" height="50px"
+                  src="/img/facebook.png" alt="Facebook"></a></li>
+            <li class="list-inline-item"><a href="www.twitter.com"><img width="50px" height="50px" src="/img/twitter.png"
+                  alt="twitter"></a></li>
+            <li class="list-inline-item"><a href="www.instagram.com"><img width="50px" height="50px"
+                  src="/img/instagram.png" alt="instagram"></a></li>
+            <li class="list-inline-item"><a href="www.linkedin.com"><img width="50px" height="50px"
+                  src="/img/linkedin.png" alt="linkedin"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $('#myModal').modal('show');
+      const active = document.querySelector(".active");
+      active.classList.remove("hidden");
+    });
+  </script>
+  <%- include('../partials/footer'); %>

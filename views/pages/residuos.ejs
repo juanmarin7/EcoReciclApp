@@ -1,0 +1,42 @@
+<%- include('../partials/header'); %>
+
+    <div class="container">
+        <div class="row text-center">
+          <div class="col boton-contenedor">
+          <a class="btn-residuo_" href="http://localhost:3000/residuo/Plastico">
+            <img class="img-icon" src="/img/plastic.png" alt="">
+            <p>Plastico</p>
+          </a>
+        </div>
+          <div class="col boton-contenedor"><a class="btn-residuo_" href="http://localhost:3000/residuo/Papel">
+            <img class="img-icon" src="/img/paper-bin.png" alt="">
+            <p>Papel</p>
+          </a>
+        </div>
+          <div class="col boton-contenedor"><a class="btn-residuo_" href="http://localhost:3000/residuo/Baterias">
+            <img class="img-icon" src="/img/battery.png" alt="">
+            <p>Baterias</p>
+          </a>
+        </div>
+        </div>
+        <div class="row text-center">
+          <div class="col boton-contenedor"><a class="btn-residuo_" href="http://localhost:3000/residuo/Aceite Usado">
+            <img class="img-icon" src="/img/oil.png" alt="">
+            <p>Aceite</p>
+          </a>
+        </div>
+          <!--div class="col boton-contenedor"><a class="btn-residuo_" href="http://localhost:3000/residuo/sindato">
+            <img class="img-icon" src="/img/plastic.png" alt=""></a>
+          </div>
+          <div class="col boton-contenedor"><a class="btn-residuo_" href="http://localhost:3000/residuo/sindato">
+            <img class="img-icon" src="/img/plastic.png" alt=""></a>
+          </div-->
+        </div>
+      </div>
+
+<%- include('../partials/footer'); %>
+
+<script>
+  const active = document.querySelector(".active");
+  active.classList.remove("hidden");
+</script>

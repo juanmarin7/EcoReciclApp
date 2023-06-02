@@ -1,0 +1,11 @@
+{
+    "servidor":{
+        "puerto": 3000
+    },
+    "servidordb":{
+        "host": "localhost",
+        "user": "root",
+        "password": "root",
+        "database": "ecoreciclapp"
+    }
+}
